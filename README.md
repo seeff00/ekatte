@@ -27,7 +27,7 @@ composer install
 
 | Endpoint                | Method | Description            | Status |
 |-------------------------|--------|------------------------| ------ |
-| /areas                  | GET    | Areas                  | OK     |
+| /areas                  | GET    | Areas                  | OK/In progress ... |
 | /areas-level-one        | GET    | Areas Level One        | In Progress ... |
 | /areas-level-two        | GET    | Areas Level Two        | In Progress ... |
 | /documents              | GET    | Documents              | In Progress ... |
