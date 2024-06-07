@@ -51,3 +51,5 @@ Open your favorite browser and enter '<b>[http://localhost:8080](http://localhos
 - code optimization on how we handles server request arguments
 - duplicate code
 - CSS Stylizations
+- Try/catch exception handlers
+- Error logging
