@@ -47,9 +47,10 @@ Open your favorite browser and enter '<b>[http://localhost:8080](http://localhos
 
 ### To do
 
-- pagination in views
-- code optimization on how we handles server request arguments
-- duplicate code
-- CSS Stylizations
-- Try/catch exception handlers
-- Error logging
+- Pagination in tables.
+- Code optimization on how we handles server request arguments.
+- Remove duplicate code.
+- CSS Stylizations.
+- Try/catch exception handlers.
+- Error logging.
+- Clear forms inputs.
