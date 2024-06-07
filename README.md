@@ -6,7 +6,7 @@ setup it'll create a Database named '<b>ekatte</b>'.
 
 The project uses the next Software Design Patterns: MVC, Singleton pattern, Repository pattern, Dependency injection
 
-#### <b>To seed data in DB requires empty GET request to endpoint '/seeds'</b>
+#### <b>To seed data in DB requires empty GET request to endpoint '[/seeds](http://localhost:8080/seeds)'</b>
 
 ### Prerequisites
 
