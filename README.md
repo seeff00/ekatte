@@ -25,18 +25,18 @@ composer install
 
 ### Endpoints
 
-| Endpoint                | Method | Description            |
-|-------------------------|--------|------------------------|
-| /areas                  | GET    | Areas                  |
-| /areas-level-one        | GET    | Areas Level One        |
-| /areas-level-two        | GET    | Areas Level Two        |
-| /documents              | GET    | Documents              |
-| /municipalities         | GET    | Municipalities         |
-| /sof-territorial-units  | GET    | Sof Territorial Units  |
-| /territorial-formations | GET    | Territorial Formations |
-| /territorial-units      | GET    | Territorial Units      |
-| /town-halls             | GET    | Town Halls             |
-| /seeds                  | GET    | Seeders                |
+| Endpoint                | Method | Description            | Status |
+|-------------------------|--------|------------------------| ------ |
+| /areas                  | GET    | Areas                  | OK     |
+| /areas-level-one        | GET    | Areas Level One        | In Progress ... |
+| /areas-level-two        | GET    | Areas Level Two        | In Progress ... |
+| /documents              | GET    | Documents              | In Progress ... |
+| /municipalities         | GET    | Municipalities         | In Progress ... |
+| /sof-territorial-units  | GET    | Sof Territorial Units  | In Progress ... |
+| /territorial-formations | GET    | Territorial Formations | In Progress ... |
+| /territorial-units      | GET    | Territorial Units      | In Progress ... |
+| /town-halls             | GET    | Town Halls             | In Progress ... |
+| /seeds                  | GET    | Seeders                | In Progress ... |
 
 
 
