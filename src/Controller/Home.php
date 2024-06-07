@@ -84,7 +84,8 @@ class Home extends Controller
     {
         $repository = new AreaLevelOneRepository(DB::getInstance());
         $areaLevelOne = new AreaLevelOne();
-
+        // TODO - define properties
+        
         $page = intval($request->getInputByName('page'));
         $page = $page > 0 ? $page : 1;
         $perPage = intval($request->getInputByName('perPage'));
@@ -123,7 +124,8 @@ class Home extends Controller
     {
         $repository = new AreaLevelTwoRepository(DB::getInstance());
         $areaLevelTwo = new AreaLevelTwo();
-
+        // TODO - define properties
+        
         $page = intval($request->getInputByName('page'));
         $page = $page > 0 ? $page : 1;
         $perPage = intval($request->getInputByName('perPage'));
@@ -164,7 +166,8 @@ class Home extends Controller
     {
         $repository = new DocumentRepository(DB::getInstance());
         $document = new Document();
-
+        // TODO - define properties
+        
         $page = intval($request->getInputByName('page'));
         $page = $page > 0 ? $page : 1;
         $perPage = intval($request->getInputByName('perPage'));
@@ -213,7 +216,8 @@ class Home extends Controller
     {
         $repository = new MunicipalityRepository(DB::getInstance());
         $municipality = new Municipality();
-
+        // TODO - define properties
+        
         $page = intval($request->getInputByName('page'));
         $page = $page > 0 ? $page : 1;
         $perPage = intval($request->getInputByName('perPage'));
@@ -262,7 +266,8 @@ class Home extends Controller
     {
         $repository = new RegionRepository(DB::getInstance());
         $region = new Region();
-
+        // TODO - define properties
+        
         $page = intval($request->getInputByName('page'));
         $page = $page > 0 ? $page : 1;
         $perPage = intval($request->getInputByName('perPage'));
@@ -309,7 +314,8 @@ class Home extends Controller
     {
         $repository = new SofTerritorialUnitRepository(DB::getInstance());
         $sofTerritorialUnit = new SofTerritorialUnit();
-
+        // TODO - define properties
+        
         $page = intval($request->getInputByName('page'));
         $page = $page > 0 ? $page : 1;
         $perPage = intval($request->getInputByName('perPage'));
@@ -352,7 +358,8 @@ class Home extends Controller
     {
         $repository = new TerritorialFormationsRepository(DB::getInstance());
         $territorialFormation = new TerritorialFormation();
-
+        // TODO - define properties
+        
         $page = intval($request->getInputByName('page'));
         $page = $page > 0 ? $page : 1;
         $perPage = intval($request->getInputByName('perPage'));
@@ -395,7 +402,8 @@ class Home extends Controller
     {
         $repository = new TerritorialUnitRepository(DB::getInstance());
         $territorialUnit = new TerritorialUnit();
-
+        // TODO - define properties
+        
         $page = intval($request->getInputByName('page'));
         $page = $page > 0 ? $page : 1;
         $perPage = intval($request->getInputByName('perPage'));
@@ -458,7 +466,8 @@ class Home extends Controller
     {
         $repository = new TownHallRepository(DB::getInstance());
         $townHall = new TownHall();
-
+        // TODO - define properties
+        
         $page = intval($request->getInputByName('page'));
         $page = $page > 0 ? $page : 1;
         $perPage = intval($request->getInputByName('perPage'));
