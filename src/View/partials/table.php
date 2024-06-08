@@ -1,4 +1,5 @@
-<?php if (isset($response['tableColumns']) && isset($response['data'])) { ?>
+
+<?php if (isset($response['tableColumns']) && isset($response['tableRows'])) { ?>
     <table>
         <thead>
         <?php
@@ -11,7 +12,7 @@
         </thead>
         <tbody>
         <?php
-        foreach ($response['data'] as $item) {
+        foreach ($response['tableRows'] as $item) {
             echo "<tr>";
             foreach ($response['tableColumns'] as $key => $value) {
                 if (isset($item[$key])) {

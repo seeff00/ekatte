@@ -18,24 +18,19 @@ class HTTPRequest
     }
 
     /**
-     * Retrieves request input by name.
+     * If no argument name is supplied, returns an array of all inputs.
+     * If an argument name is passed it returns it value.
      *
-     * @param string $argName
-     * @return string|false
+     * @param string $argName - Optional
+     * @return array|string
      */
-    public function getInputByName(string $argName): string|false
+    public function inputs(string $argName = ''): array|string
     {
-        return isset($this->inputs[$argName]) ? trim($this->inputs[$argName]) : false;
-    }
+        if (empty(trim($argName))) {
+            return $this->inputs;
+        }
 
-    /**
-     * Retrieves all request inputs.
-     * 
-     * @return array
-     */
-    public function getAllInputs(): array
-    {
-        return $this->inputs;
+        return isset($this->inputs[$argName]) ? trim($this->inputs[$argName]) : false;
     }
 
 }

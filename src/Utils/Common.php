@@ -36,4 +36,22 @@ class Common
 
         return $d && $d->format($format) == $date;
     }
+
+    /**
+     * Clears array from empty values.
+     *
+     * @param array $array
+     * @return array
+     */
+    public static function clearArray(array $array): array {
+        $clearedArray = [];
+
+        foreach ($array as $key => $value) {
+            if(!empty(trim($value))){
+                $clearedArray[$key] = $value;
+            }
+        }
+
+        return $clearedArray;
+    }
 }

@@ -20,7 +20,8 @@ class Router
      * @param $action
      * @return void
      */
-    public function get($route, $controller, $action) {
+    public function get($route, $controller, $action): void
+    {
         if ($_SERVER["REQUEST_METHOD"] !== 'GET'){
             return;
         }
@@ -36,7 +37,8 @@ class Router
      * @param $action
      * @return void
      */
-    public function post($route, $controller, $action) {
+    public function post($route, $controller, $action): void
+    {
         if ($_SERVER["REQUEST_METHOD"] !== 'POST'){
             return;
         }
@@ -52,7 +54,8 @@ class Router
      * @param $action
      * @return void
      */
-    public function put($route, $controller, $action) {
+    public function put($route, $controller, $action): void
+    {
         if ($_SERVER["REQUEST_METHOD"] !== 'PUT'){
             return;
         }
@@ -68,7 +71,8 @@ class Router
      * @param $action
      * @return void
      */
-    public function delete($route, $controller, $action) {
+    public function delete($route, $controller, $action): void
+    {
         if ($_SERVER["REQUEST_METHOD"] !== 'DELETE'){
             return;
         }
@@ -82,7 +86,8 @@ class Router
      *
      * @throws Exception
      */
-    public function dispatch($uri) {
+    public function dispatch($uri): void
+    {
         if (array_key_exists($uri, $this->routes)) {
             $controller = $this->routes[$uri]['controller'];
             $action = $this->routes[$uri]['action'];

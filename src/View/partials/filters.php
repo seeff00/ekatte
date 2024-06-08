@@ -15,10 +15,10 @@ if (!isset($filters) || count($filters) <= 0) {
         } ?>
 
         <input type="hidden" name="page" value="<?php echo $_GET['page'] ?? ($_POST['page'] ?? 1); ?>">
-        <input type="hidden" name="perPage" value="<?php echo $_GET['perPage'] ?? ($_POST['perPage'] ?? 10) ?>">
+        <input type="hidden" name="perPage" value="<?php echo $_GET['perPage'] ?? ($_POST['perPage'] ?? 100) ?>">
 
         <input id="submit" type="submit" value="Търсене" />
-        <input id="clear" type="button" value="Изчистване на филтри" />
+        <input id="reset-inputs" type="button" value="Изчистване на филтри" />
     </div>
 </form>
 </div>

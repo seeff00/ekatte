@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Utils\DBSeeder;
+use Exception;
 
 class Admin extends Controller
 {
@@ -14,8 +15,13 @@ class Admin extends Controller
      */
     public function seeders(HTTPRequest $request) : void
     {
-        $dbSeeder = new DBSeeder();
-        $dbSeeder->run();
+        try {
+            $dbSeeder = new DBSeeder();
+            $dbSeeder->run();
+            echo "Seeding ends successfully";
+        } catch (Exception $e){
+            echo $e->getMessage();
+        }
 
         $response = [];
 

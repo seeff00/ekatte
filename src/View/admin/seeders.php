@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="../../../public/css/styles.css">
-    <link rel="stylesheet" href="../../../public/css/home/styles.css">
-</head>
+    <?php require($_SERVER['DOCUMENT_ROOT'] . '/src/View/partials/head.php'); ?>
 <body>
 <div id="wrapper">
 

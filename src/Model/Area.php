@@ -2,6 +2,8 @@
 
 namespace App\Model;
 
+use DateTime;
+use Exception;
 use JsonSerializable;
 
 class Area implements ModelInterface, JsonSerializable
@@ -186,5 +188,42 @@ class Area implements ModelInterface, JsonSerializable
     public function jsonSerialize(): array
     {
         return get_object_vars($this);
+    }
+
+    /**
+     * @throws Exception
+     */
+    public static function arrayToObject(array $array): Area {
+        $area = new Area();
+
+        if (isset($array['id'])) {
+            $area->setId($array['id']);
+        }
+        if (isset($array['raion'])) {
+            $area->setRaion($array['raion']);
+        }
+        if (isset($array['name'])) {
+            $area->setName($array['name']);
+        }
+        if (isset($array['name_en'])) {
+            $area->setNameEn($array['name_en']);
+        }
+        if (isset($array['document'])) {
+            $area->setDocument($array['document']);
+        }
+        if (isset($array['document'])) {
+            $area->setDocument($array['document']);
+        }
+        if (isset($array['createdAt'])) {
+            $area->setCreatedAt(new DateTime($array['createdAt']));
+        }
+        if (isset($array['updatedAt'])) {
+            $area->setUpdatedAt(new DateTime($array['updatedAt']));
+        }
+        if (isset($array['isDeleted'])) {
+            $area->setIsDeleted($array['isDeleted']);
+        }
+
+        return $area;
     }
 }
